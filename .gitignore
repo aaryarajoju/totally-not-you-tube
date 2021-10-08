@@ -33,3 +33,6 @@ modules.xml
 # dotenv environment variables file
 .env
 .env.test
+
+# cache file
+.eslintcache
