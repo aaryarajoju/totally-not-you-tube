@@ -22,8 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-config.json
-
 # idea config files
 workspace.xml
 tasks.xml
