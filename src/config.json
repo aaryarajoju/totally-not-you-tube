@@ -1,0 +1,10 @@
+{
+    "firebaseConfig" : {
+        "apiKey": "AIzaSyBJjjr_XxCiaI-nZaj_rUNVt7HYasHo63M",
+        "authDomain": "totally-not-you-tube.firebaseapp.com",
+        "projectId": "totally-not-you-tube",
+        "storageBucket": "totally-not-you-tube.appspot.com",
+        "messagingSenderId": "570148884541",
+        "appId": "1:570148884541:web:6000eba4ed5ac5e93d5a54"
+    }
+}
