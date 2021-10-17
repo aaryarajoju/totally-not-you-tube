@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router'
+import HelmetCustom from '../../components/helmetCustom/HelmetCustom';
 import VideoHorizontal from '../../components/videoHorizontal/VideoHorizontal';
 import { getVideosBySearch } from '../../redux/actions/videos.action';
 
@@ -20,6 +21,8 @@ const SearchScreen = () => {
 
     return (
         <Container>
+
+            <HelmetCustom title={"Search - " + query} description={"Search"} />
 
             {!loading ?
                 videos?.map(video => <VideoHorizontal video={video} key={video.id.videoId} searchScreen />)

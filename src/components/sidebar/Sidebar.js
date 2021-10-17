@@ -6,8 +6,7 @@ import {
     MdThumbUp,
     MdHistory,
     MdLibraryBooks,
-    MdHome,
-    MdSentimentDissatisfied,
+    MdHome
 } from "react-icons/md"
 import { useDispatch } from 'react-redux';
 import { logout } from '../../redux/actions/auth.action';
@@ -40,11 +39,13 @@ const Sidebar = ({sidebar, handleToggleSidebar}) => {
                 </li>
             </Link>    
 
+            {/* TODO: add liked videos and an option to like videos */}
             <li>
                 <MdThumbUp size={23} />
                 <span>Liked Videos</span>
             </li>
 
+            {/* TODO: add history */}
             <li>
                 <MdHistory size={23} />
                 <span>History</span>
@@ -53,11 +54,6 @@ const Sidebar = ({sidebar, handleToggleSidebar}) => {
             <li>
                 <MdLibraryBooks size={23} />
                 <span>Library</span>
-            </li>
-
-            <li>
-                <MdSentimentDissatisfied size={23} />
-                <span>I don't Know</span>
             </li>
 
             <hr />
@@ -71,6 +67,6 @@ const Sidebar = ({sidebar, handleToggleSidebar}) => {
 
         </nav>
     )
-}
+};
 
-export default Sidebar
+export default Sidebar;

@@ -6,6 +6,7 @@ import Video from '../../components/video/Video';
 import { getPopularVideos, getVideosByCategory } from '../../redux/actions/videos.action';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import SkeletonVideo from '../../components/skeletons/SkeletonVideo';
+import HelmetCustom from '../../components/helmetCustom/HelmetCustom';
 
 const HomeScreen = () => {
 
@@ -24,6 +25,9 @@ const HomeScreen = () => {
 
     return (
         <Container>
+
+            <HelmetCustom />
+
             <CategoriesBar />
 
                 <InfiniteScroll className="row" 

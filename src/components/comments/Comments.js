@@ -12,6 +12,7 @@ const Comments = ({ videoId, totalComments }) => {
         dispatch(getCommentsOfVideoById(videoId));
     }, [videoId, dispatch]);
 
+    const { photoURL } = useSelector(state => state.auth?.user);
     const comments = useSelector(state => state.commentList.comments);
 
     const [text, setText] = useState('');
@@ -20,7 +21,7 @@ const Comments = ({ videoId, totalComments }) => {
 
     const handleComment = (e) => {
         e.preventDefault();
-        if(text.length == 0) return;
+        if(text.length === 0) return;
         dispatch(addComment(videoId, text));
         setText('');
     }
@@ -29,7 +30,7 @@ const Comments = ({ videoId, totalComments }) => {
         <div className="comments">
             <p>{totalComments} comments</p>
             <div className="comments__form d-flex w-100 my-2">
-                <img src="https://www.pngkey.com/png/full/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png" alt="" className="rounded-circle mr-3"/>
+                <img src={photoURL} alt="" className="rounded-circle mr-3"/>
                 <form onSubmit={handleComment} className="d-flex flex-grow-1">
                     <input type="text" className="flex-grow-1" placeholder="write a comment" value={text} onChange={e => setText(e.target.value)} />
                     <button className="border-0 p-2">Comment</button>

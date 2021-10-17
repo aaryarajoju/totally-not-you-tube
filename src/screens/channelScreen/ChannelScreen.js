@@ -8,6 +8,7 @@ import { getChannelDetails } from '../../redux/actions/channel.action';
 import { getVideosByChannel } from '../../redux/actions/videos.action';
 import './_channelScreen.scss';
 import numeral from 'numeral';
+import HelmetCustom from '../../components/helmetCustom/HelmetCustom';
 
 const ChannelScreen = () => {
 
@@ -25,6 +26,8 @@ const ChannelScreen = () => {
 
     return (
         <>
+
+            <HelmetCustom title={snippet?.title} description={"Channel - " + snippet?.title} />
 
             <div className='px-5 py-2 my-2 d-flex justify-content-between align-items-center channelHeader'>
                 <div className='d-flex align-items-center'>

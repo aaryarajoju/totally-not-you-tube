@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
+import HelmetCustom from '../../components/helmetCustom/HelmetCustom';
 import { login } from '../../redux/actions/auth.action';
 import "./_loginScreen.scss"
 
@@ -24,6 +25,9 @@ const LoginScreen = () => {
 
     return (
         <div className="login">
+
+            <HelmetCustom title={"Login - Totally-Not-YouTube"} description={"Login"} />
+
             <div className="login__container">
                 <h2>Totally-Not-Youtube</h2>
                 <img src="http://pngimg.com/uploads/youtube/youtube_PNG2.png" alt="" />
