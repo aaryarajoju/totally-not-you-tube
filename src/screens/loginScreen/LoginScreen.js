@@ -32,7 +32,7 @@ const LoginScreen = () => {
                 <h2>Totally-Not-Youtube</h2>
                 <img src="http://pngimg.com/uploads/youtube/youtube_PNG2.png" alt="" />
                 <button onClick={handleLogin}>Login with Google</button>
-                <p>A YouTube client made by AR</p>
+                <p>A YouTube client/clone made by AR</p>
             </div>
         </div>
     )

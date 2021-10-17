@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./_header.scss";
-
 import { FaBars } from "react-icons/fa"
 import { AiOutlineSearch } from "react-icons/ai"
 import { MdNotifications, MdApps } from "react-icons/md"
@@ -16,11 +15,10 @@ const Header = ({handleToggleSidebar}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
         history.push(`/search/${input}`);
     }
 
-    const { photoURL } = useSelector(state => state.auth?.user);
+    const user = useSelector(state => state.auth?.user);
 
     return (
         <div className="header">
@@ -38,7 +36,7 @@ const Header = ({handleToggleSidebar}) => {
             <div className="header__icons">
                 <MdNotifications size={28} />
                 <MdApps size={28} />
-                <img src={photoURL} alt="avatar" />
+                <img src={user?.photoURL} alt="avatar" />
             </div>
 
         </div>
