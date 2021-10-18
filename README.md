@@ -28,14 +28,14 @@ more seriously, actual learnings:
 
 - uses and advantages of React and other js frameworks
 - benefits of using a state management tool, such as Redux
-- CI/CD using github actions
+- CI/CD using GitHub actions
 
 ## How does the project work?
 
 - The webpage is loaded using React
 - `Login with Google` authentication works through firebase
-- The data is recieved from the YouTube Data API
-- All of the data is stored in a Redux Store - the data includes the user data, video recommendations, comments, etc. etc.
+- The data is received from the YouTube Data API
+- All the data is stored in a Redux Store - the data includes the user data, video recommendations, comments, etc. etc.
 - All the state data is retrieved and the components are updated to show the data
 
 ## How is the project made?
@@ -64,4 +64,4 @@ more seriously, actual learnings:
 
 ---
 
-Project Licensed by [AARYA RAJOJU](https://github.com/aaryarajoju) under an [MIT License](./LICENSE)
+Code Licensed by [AARYA RAJOJU](https://github.com/aaryarajoju) under an [MIT License](./LICENSE)
